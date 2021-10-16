@@ -10,11 +10,12 @@
 //my solution
 function maxChar(str) {
     let chars = {};
+    // declaring helper variables
     let maxChar = ""
     let maxValue = 0
 
     for (let char of str) {
-        chars[char] = chars[char] + 1 || 1;
+        chars[char] = chars[char] ++ || 1;
     }
 
     for (let char in chars) {
